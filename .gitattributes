@@ -1,0 +1,9 @@
+# 统一换行符为 LF：板端（Linux）执行脚本时 CRLF 会导致
+# "bad interpreter: /bin/bash^M" 之类的错误
+* text=auto eol=lf
+
+# 二进制文件不做文本转换与合并
+*.png binary
+*.jpg binary
+*.so binary
+*.rknn binary
