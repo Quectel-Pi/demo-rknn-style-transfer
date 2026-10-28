@@ -17,6 +17,8 @@ except Exception as e:                                    # pragma: no cover
     print("无法导入 GStreamer Python 绑定 (python3-gi / gir1.2-gstreamer-1.0): %s" % e)
     sys.exit(1)
 
+CAM_W, CAM_H = 640, 480
+FPS = 30
 
 def build_capture(camera):
     desc = (
